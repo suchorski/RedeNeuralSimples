@@ -1,6 +1,9 @@
 # RedeNeuralSimples
 Classe que implementa uma rede neural simples feita em Java
 
+## Documentação
+Você pode acessar a documentação online clicando [aqui](https://suchorski.github.io/RedeNeuralSimples/docs/).
+
 ## Utilização
 
 Basta simplesmente instanciar a classe e utilizar os métodos setDna, recalcularPesos e calcular.
