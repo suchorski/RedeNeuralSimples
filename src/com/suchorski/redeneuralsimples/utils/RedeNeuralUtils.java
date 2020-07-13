@@ -20,7 +20,7 @@ public class RedeNeuralUtils {
 	 * @param nomeDoArquivo nome do arquivo para salvar
 	 * @param dna DNA a ser salvo
 	 * @param id identificador do DNA
-	 * @throws FileNotFoundException
+	 * @throws FileNotFoundException Se o arquivo não for encontrado
 	 */
 	public synchronized static void salvarDna(String nomeDoArquivo, List<Double> dna, long id) throws FileNotFoundException {
 		try (PrintWriter pw = new PrintWriter(new File(nomeDoArquivo))) {
@@ -36,7 +36,7 @@ public class RedeNeuralUtils {
 	 * @param nomeDoArquivo nome do arquivo para salvar
 	 * @param dna lista para carregar o DNA
 	 * @return identificador do DNA
-	 * @throws FileNotFoundException
+	 * @throws FileNotFoundException Se o arquivo não for encontrado
 	 */
 	public synchronized static long carregarDna(String nomeDoArquivo, List<Double> dna) throws FileNotFoundException {
 		try (Scanner s = new Scanner(new File(nomeDoArquivo))) {
